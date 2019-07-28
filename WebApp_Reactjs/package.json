@@ -35,6 +35,12 @@
     "webpack-hot-middleware": "2.25.0",
     "webpack-dev-middleware": "3.7.0"
   },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "jsx-loader": "^0.13.2",
+    "mdbreact": "^4.3.0",
+    "reactstrap": "^5.0.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   }

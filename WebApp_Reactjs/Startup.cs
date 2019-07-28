@@ -56,9 +56,14 @@ namespace WebApp_Reactjs
 
             app.UseMvc(routes =>
             {
+                
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapSpaFallbackRoute(
+                    name: "spa-fallback",
+                    defaults: new { controller = "Home", action = "Index" });
             });
 
             app.UseSpa(spa =>

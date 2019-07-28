@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="package-lock.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ClientApp\boot.tsx" />
     <None Remove="ClientApp\routes.tsx" />
     <None Remove="ClientApp\src\Layouts\Layout\index.tsx" />
@@ -30,9 +34,6 @@
     <None Remove="ClientApp\src\routers\index.tsx" />
     <None Remove="ClientApp\src\screens\Home\index.tsx" />
     <None Remove="webpack.config.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="wwwroot\baby-cow.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="webpack.config.js" />
@@ -49,9 +50,11 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\components\" />
+    <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="package-lock.json" />
     <None Include="package.json" />
   </ItemGroup>
 
